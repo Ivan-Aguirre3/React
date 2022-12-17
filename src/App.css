@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar,
+.dropdown-menu {
+  background-color: rgb(26, 25, 25);
+  justify-content: space-between;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  background: rgb(36, 36, 36);
+}
+
+.navText,
+.nav-link {
+  color: white !important;
+}
+
+.active {
+  color: white !important;
+}
+
+.navLogo {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 17em;
+  height: 2em;
+  margin-right: 1%;
+}
+
+.navLogo:hover {
+  background-image: url();
+  transition: 0.2s;
+}
+
+#navSearch {
+  box-shadow: none;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.searchBtn {
+  border: none;
+  width: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBtn:hover,
+.searchBtn:focus,
+.searchBtn:active,
+.searchBtn:visited {
+  background-color: rgba(97, 97, 97, 0.466);
+}
+
+.searchIcon {
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.navCartIcon {
+  color: rgb(255, 255, 255);
+  width: 3em;
+  height: 3em;
+  border-right: solid 2px white;
+  padding-right: 1em;
+}
+
+.navCartDiv {
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.qty-display {
+  display: inline-block;
+  color: rgb(26, 25, 25);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  text-align: center;
+  line-height: 17px;
+  margin-left: -2em;
+}
+
+/* Main - Product Section */
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.productSection {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+}
+
+.productCard {
+  background-color: #ffffff;
+  color: black;
+  width: 15em;
+  height: 22em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  position: relative;
+  border-radius: 30px;
+  border: solid;
+}
+
+.productCard:hover {
+  box-shadow: 0px 0px 11px 4px #00ccff;
+  transition: 0.5s;
+}
+
+.productImage {
+  width: 9em;
+  height: 9em;
+  margin: 15%;
+}
+
+.productStock {
+  position: absolute;
+  text-align: center;
+  top: 3%;
+  margin-left: -55%;
+  width: 89px;
+}
+.productContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productTitle {
+  margin: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.priceTag {
+  font-weight: 900;
+  text-align: center;
+}
+
+.button {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 16px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Products - Detail Section */
+
+.detailMainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.detailCard {
+  margin-top: 2%;
+  background-color: #1a1919;
+  border: solid #24232352 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 5% 5% 0% 5%;
+}
+
+.detailTitle {
+  color: white;
+  font-weight: 900;
+  font-size: 2em;
+  color: white;
+  text-shadow: -1px 0 #000, 0 3px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.detailContent {
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: -1%;
+}
+
+.detailImage {
+  width: 60%;
+  display: flex;
+  border-right: #31303083 3px solid;
+  padding: 5%;
+}
+
+.detailAvailability {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 1%;
+  margin-top: 4%;
+}
+
+.detailTextDiv {
+  border-top: #24232352 4px solid;
+}
+
+.detailTextDiv:first-child {
+  border-top: none;
+}
+
+.detailContentText {
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  padding-top: 1em;
+  font-size: 1.1em;
+}
+
+.detailPriceSimbol {
+  color: rgb(245, 65, 65);
+}
+
+.detailContentSpan {
+  font-weight: 800;
+}
+
+.detailContentTextShip {
+  font-size: 1em;
+  color: rgb(207, 207, 207);
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  margin-top: -4%;
+}
+
+.detailDescriptionDiv {
+  padding-top: 5%;
+}
+
+.detailDescriptionTitle {
+  color: white;
+  text-shadow: -1px 0 #000, 0 3px #000, 1px 0 #000, 0 -1px #000;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.shopIcon {
+  height: 2em;
+  width: 2em;
+}
